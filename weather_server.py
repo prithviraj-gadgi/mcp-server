@@ -5,7 +5,7 @@ mcp = FastMCP(name="weather", port=8080)
 
 
 @mcp.tool()
-async def get_weather(location: str) -> dict:
+def get_weather(location: str) -> dict:
     """Get weather for location."""
     response = requests.get(f'https://wttr.in/{location}?format=j1')
     return response.json()
