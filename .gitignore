@@ -119,6 +119,10 @@ __pypackages__/
 celerybeat-schedule
 celerybeat.pid
 
+# Local MCP server runtime files
+.mcp-pids/
+.mcp-logs/
+
 # SageMath parsed files
 *.sage.py
 
@@ -161,4 +165,3 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
-
